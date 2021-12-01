@@ -1,0 +1,73 @@
+<!doctype html> <!-- setting doctype to HTML5 -->
+<html lang="en"> <!-- start of html tag setting language to english -->
+  <head>
+    <meta charset="utf-8"> <!-- start of meta tag setting unicode standard -->
+    <meta name="viewport" content="width=device-width, initail-scale=1">
+    <meta name="description" content="Super Nintendo Entertainment System">
+    <title>Nintendo | Contact</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/SuperFamicomLogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/javascript.js"></script>
+  </head>
+  <body>
+    <header id="header"></header> <!-- Header is declaired here. An id  is set to reference in JavaScript -->
+    <main>
+      <section class="contact-masthead">
+        <!-- this class contains a div and header that will be used as the page masthead -->
+        <div>
+          <h1>Contact Us</h1>
+        </div>
+      </section>
+      <section class="contact-info">
+        <!-- this section contains the contact info in text and an image -->
+        <div>
+          <p>Whether you need customer support, are interested in doing business with us, or have other questions, here’s how to get in touch.</p>
+          <h3>Address:</h3>
+          <p>Nintendo of America 4600 150th Ave NE Redmond, WA 98052</p>
+          <h3>Phone Number:</h3>
+          <p>425-882-2040</p>
+        </div>
+        <div>
+          <img src="./img/mario-luigi.png" alt="Mario and Luigi">
+        </div>
+      </section>
+      <!-- new section called form which contains an h3 and the form itself -->
+      <section class="form">
+        <h3>Contact Form</h3>
+        <!-- in this form it contains the relevant elements for the user to enter first name, last name, email, phone number, and text -->
+        <form action="actionfile.php" method="post" autocomplete="on" enctype="multipart/form-data">
+          <div class="fname">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" placeholder="First Name" required>
+          </div>
+          <div class="lname">
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+          </div>
+          <div class="email">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="phone">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone Number" required>
+            <p>Format: 123-456-1234</p>
+          </div>
+          <div class="inquiry">
+            <label for="inquiry">Describe Your Inquiry</label>
+            <textarea name="inquiry" id="inquiry"></textarea>
+          </div>
+          <div class="submit">
+            <input class="submit-btn" type="submit" name="submit" value="Submit">
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer id="footer"></footer> <!-- Footer is declaired here. An id  is set to reference in JavaScript -->
+  </body>
+</html>
